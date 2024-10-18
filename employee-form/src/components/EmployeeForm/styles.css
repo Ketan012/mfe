@@ -1,0 +1,31 @@
+.employee-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border: 1px solid gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 3px;
+    margin: 3px;
+}
+
+button {
+    color: white;
+    background: rgb(164, 161, 160);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    width: auto;
+    margin: 10px 150px 0px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
