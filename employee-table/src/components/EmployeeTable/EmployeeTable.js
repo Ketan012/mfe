@@ -23,7 +23,7 @@ const EmployeeTable = ({ employees }) => {
             ))
           ) : (
             <tr>
-              <td>'No details available'</td>
+              <td>No details available</td>
             </tr>
           )}
         </tbody>
