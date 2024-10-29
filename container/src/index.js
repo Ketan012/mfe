@@ -12,6 +12,11 @@ const App = () => {
     setEmployees([...employees, employee]);
   };
 
+  const onDeleteEmployee = (selectedEmployeeIndex) => {
+    const _employees = employees.filter((_, index) => index !== selectedEmployeeIndex);
+    setEmployees(_employees);
+  }
+
   return (
     <div className="container">
       <h1>Employee Management</h1>
@@ -20,7 +25,10 @@ const App = () => {
       </React.Suspense>
       <br />
       <React.Suspense fallback="Loading Table...">
-        <EmployeeTable employees={employees} />
+        <EmployeeTable
+          employees={employees}
+          onDeleteEmployee={onDeleteEmployee}
+        />
       </React.Suspense>
     </div>
   );
